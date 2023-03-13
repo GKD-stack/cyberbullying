@@ -1,8 +1,7 @@
-title: Just the Docs Template
-description: A starter template for a Jeykll site using the Just the Docs theme!
+title: Solving Cyberbullying with Data Science
+description: An outline of a 6 month data science effort to mitigate cyberbullying from data collection, modeling, revision, use, and revision. 
 theme: just-the-docs
 
-url: https://just-the-docs.github.io
+url: https://gkd-stack.github.io/cyberbullying
 
-aux_links:
-  Template Repository: https://github.com/just-the-docs/just-the-docs-template
+
