@@ -3,8 +3,12 @@ title: Home
 layout: home
 ---
 
-This site is a huge work in progress and my final
+# Solving Cyberbullying with Data Science
 
-here is a cool inforgraphic meantime though
+## By Gurman Dhaliwal 
 
-my name is gurman dhaliwal and im a third year ds major
+![Cyberbullying](/cyberbullying/assets/pic.png)
+
+### Overview 
+This website outlines a data science effort to tackle cyberbullying through methods such as sentiment analysis and network analysis focusing on children on Instagram. From data collection, analysis, use, and revision, each component of the life cycle is broken down and analyzed with an emphasis on data ethics. 
+
