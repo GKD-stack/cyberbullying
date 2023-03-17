@@ -1,6 +1,7 @@
 ---
 title: Home
 layout: home
+nav_order = 1 
 ---
 
 # Solving Cyberbullying with Data Science
