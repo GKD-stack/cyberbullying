@@ -13,15 +13,32 @@ Note: It is possible to derive certain predictors such as age from already exist
 The following relations will be constructed. 
 
 ### Work in Progress 
-<div align="center">
+### Demographic
+<center> 
+| Variable Name     | Data Type            | Collection Method |
+|:-----------------:|:--------------------|:------------------|
+| Age               | Integer              | Voluntary         |
+| Race              | Categorical          | Voluntary         |
+| Sexuality         | Categorical          | Voluntary         |
+| Household Income  | Continuous Numeric   | Voluntary         |
+| Gender            | Categorical          | Voluntary         |
+| User ID           | Categorical          | Instagram         |
+| Name              | Categorical          | Instagram         |
+| Physical Address  | Categorical          | Voluntary         |
+</center>
 
-| Tables   |      Are      |  Cool |
-|----------|:-------------:|------:|
-| Age |  left-aligned | $1600 |
-| Race |    centered   |   $12 |
-| Sexuality | right-aligned |    $1 |
+### Cyberbullying History
+| Variable Name                                     | Data Type          | Collection Method |
+|:-------------------------------------------------:|:------------------|:------------------|
+| Any past incidents                                | Boolean            | Voluntary         |
+| Any reported past incidents                      | Boolean            | Instagram         |
+| Number of Cyberbullying Experiences in Past Year  | Continuous Numeric | Voluntary         |
 
-</div>
+<center> 
+
+</center>
+
+
 
 ### Demographic 
 - Age - Integer (v)
@@ -35,7 +52,7 @@ The following relations will be constructed.
 
 ### Cyberbullying History
 - Any past incidents - Boolean (v) 
-- Any reported past incidents - Boolean (g)
+- Any reported past incidents - Boolean (p)
 - Number of Cyberbullying Experiences in Past Year (v)
 
 ### Network
