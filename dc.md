@@ -81,15 +81,28 @@ The primary key for this table will be the other party and the data/time the mes
 
 
 ## Model 
-The predictors in demographic, cyberbullying history, and network will be used as inputs in the network analysis, and the results will be statistics such as degree centrality, eigenvector centrality, and community membership. Degree centrality essentially measures the number of followers, which is relevant since more popular accounts may be more prone to cyberbullying due ot more exposure. Eigenvector centrality measures a particular account’s influence in their network through measure such as time spent on viewing their posts or searching their account name. Community membership identifies particular groups who may belong to a marginalized group and be more likely to be targetted through cyberbullying. 
+The predictors in demographic, cyberbullying history, and network relations will be used as inputs in the network analysis. The results of the network analysis will be statistics such as degree centrality, eigenvector centrality, and community membership. Degree centrality essentially measures the number of followers, which is relevant since more popular accounts may be more prone to cyberbullying due to more exposure. Eigenvector centrality measures a particular account’s influence in their network through measure such as time spent on viewing their posts or searching their account name. Community membership identifies particular groups who may belong to a marginalized group and be more likely to be targetted through cyberbullying. 
 
-We will also use natural language processing techniques on the predictors in the direct message and comments relations to predict whether a particular comment or message could be classified as “hostile.” The results of this subprocess can be statistics that reveal how many and the frequency of hostile comments, messages that a victim recieves and from who. 
+We will also use natural language processing techniques on the predictors in the direct message and comments relations to predict whether a particular comment or message could be indicative of cyberbullying. The results of this subprocess can be statistics that reveal how many and the frequency of hostile comments, messages that a victim recieves and from who. 
 
-Finally, we will use the results from the subprocesses alongside the predictors in the demographic and cyberbullying history table as inputs for our predictive model. 
+Finally, we will use the results from the subprocesses (i.g., degree centrality, frequency of hostile comments) the alongside the predictors in the demographic and cyberbullying history table as inputs for our predictive model. 
 
 The model can take a variety of forms including logistic regression, decision trees, random forests, support vector machines, and neural networks. Since there are not strong existing biases within this data, we will prioritize performance above transparency and choose a neural network model to optimize performance. 
 
 The result of the model will be a score from a scale of 1 to 100, where a higher score indicates one is more likely to be a victim. 
+
+graph TD;
+  A[Demographic<br> Cyberbullying<br> History<br> Network Relations] --> B[Network Analysis<br> Degree centrality<br> Eigenvector centrality<br> Community membership]
+  A[Demographic<br> Cyberbullying<br> History<br> Network Relations] --> C[NLP on Direct<br> Message and<br> Comments Relations<br> Hostile Comments<br> Frequency]
+  B --> D[Predictive Model<br> (Logistic Regression,<br> Decision Trees,<br> Random Forests,<br> Support Vector Machines,<br> Neural Networks)]
+  C --> D
+
+
+There will be 2 thresholds used to classify each score. The thresholds will be determined based off of the training data and the outcomes of cyberbullying incidents examined manually by the Instagram team. 
+
+If a score surpasses the first threshold, then the victim is warned and provided with educational resources and reminded of actions they can take including blocking and flagging accounts. If there are other account holders or if the account has parental controls, then the parents will be notified. 
+
+If a score surpasses the second threshold, then actions that were recommended to the victim are automatically done, a real person is notified to look more into the case, and the victim will be notified. For example, an account that consistently sends inappropriate messages will be blocked unless the user unblocks them manually. If there are inconsistencies with this process, the original user can also submit feedback anytime as a false flag. 
 
 **insert diagram for clarity** 
 
@@ -106,5 +119,3 @@ By signing up for Instagram, users allow Instagram to monitor many factors, incl
 For usage, we aim to make this project a cyberbullying feature that users can opt in or opt-out. If a user creates a new account or is young, Instagram will recommend they turn the feature on. 
 
 
-
-There will be 2 thresholds used to classify each score. The thresholds will be determined based off of the training data and the outcomes of cyberbullying incidents examined manually by the Instagram team. If a score surpasses the first threshold, then the victim is warned and provided with educational resources and reminded of actions they can take including blocking and flagging accounts. If there are other account holders or if the account has parental controls, then the parents will be notified. If a score surpasses the second threshold, then actions that were recommended to the victim are automatically done, a real person is notified to look more into the case, and the victim will be notified. For example, an account that consisitently sends inappropriate messages will be blocked unless the user unblocks them manually. If there are inconsistencies with this process, the original user can also submit feedback anytime as a false flag. 
