@@ -12,20 +12,6 @@ Note: It is possible to derive certain predictors such as age from already exist
 
 The following relations will be constructed. 
 
-### Work in Progress 
-| Name         | Age | Gender |
-| ---          | --- | ---    |
-| John Doe     | 25  | Male   |
-| Jane Smith   | 30  | Female |
-| Bob Johnson  | 45  | Male   |
-
-<center> 
-| Name         | Age | Gender |
-| ---          | --- | ---    |
-| John Doe     | 25  | Male   |
-| Jane Smith   | 30  | Female |
-| Bob Johnson  | 45  | Male   |
-</center>
 
 # Tables
 
@@ -41,28 +27,23 @@ Tables are responsive by default, allowing wide tables to have a horizontal scro
 | ok           | good `zoute` drop | yumm  |
 
 </div>
-```markdown
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-```
+
 
 ### Demographic
-<center> 
-| Variable Name     | Data Type            | Collection Method |
-|:-----------------:|:--------------------:|:------------------|
-| Age               | Integer              | Voluntary         |
-| Race              | Categorical          | Voluntary         |
-| Sexuality         | Categorical          | Voluntary         |
-| Household Income  | Continuous Numeric   | Voluntary         |
-| Gender            | Categorical          | Voluntary         |
-| User ID           | Categorical          | Instagram         |
-| Name              | Categorical          | Instagram         |
-| Physical Address  | Categorical          | Voluntary         |
-</center>
+<div class="code-example" markdown="1">
+
+| Variable Name    | Data Type           | Collection Method |
+|:-----------------|:--------------------|:------------------|
+| Age              | Integer             | Voluntary         |
+| Race             | Categorical         | Voluntary         |
+| Sexuality        | Categorical         | Voluntary         |
+| Household Income | Continuous Numeric  | Voluntary         |
+| Gender           | Categorical         | Voluntary         |
+| User ID          | Categorical         | Instagram         |
+| Name             | Categorical         | Instagram         |
+| Physical Address | Categorical         | Voluntary         |
+
+</div>
 
 ### Cyberbullying History
 | Variable Name                                     | Data Type          | Collection Method |
