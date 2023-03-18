@@ -19,7 +19,13 @@ The following relations will be constructed.
 | Jane Smith   | 30  | Female |
 | Bob Johnson  | 45  | Male   |
 
-
+<center> 
+| Name         | Age | Gender |
+| ---          | --- | ---    |
+| John Doe     | 25  | Male   |
+| Jane Smith   | 30  | Female |
+| Bob Johnson  | 45  | Male   |
+</center>
 
 ### Demographic
 <center> 
