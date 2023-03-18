@@ -91,24 +91,13 @@ The model can take a variety of forms including logistic regression, decision tr
 
 The result of the model will be a score from a scale of 1 to 100, where a higher score indicates one is more likely to be a victim. 
 
-graph LR
-A[Demographic<br>Cyberbullying history<br>Network relations] --> B(Network Analysis)
-B --> C(Degree centrality<br>Eigenvector centrality<br>Community membership)
-A --> D(Direct message and comments relations)
-D --> E(NLP techniques to predict cyberbullying)
-E --> F(Frequency of hostile messages and comments)
-C --> G(Predictive model)
-F --> G
-
-
-
 There will be 2 thresholds used to classify each score. The thresholds will be determined based off of the training data and the outcomes of cyberbullying incidents examined manually by the Instagram team. 
 
 If a score surpasses the first threshold, then the victim is warned and provided with educational resources and reminded of actions they can take including blocking and flagging accounts. If there are other account holders or if the account has parental controls, then the parents will be notified. 
 
 If a score surpasses the second threshold, then actions that were recommended to the victim are automatically done, a real person is notified to look more into the case, and the victim will be notified. For example, an account that consistently sends inappropriate messages will be blocked unless the user unblocks them manually. If there are inconsistencies with this process, the original user can also submit feedback anytime as a false flag. 
 
-**insert diagram for clarity** 
+![Flowchart](/cyberbullying/assets/flow.png)
 
 ## Measurement System
 There are two primary components of the measurement system: how we plan to measure each variable and how well our variables represent the knowledge we hope to extract. 
