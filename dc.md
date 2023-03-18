@@ -13,6 +13,14 @@ Note: It is possible to derive certain predictors such as age from already exist
 The following relations will be constructed. 
 
 ### Work in Progress 
+| Name         | Age | Gender |
+| ---          | --- | ---    |
+| John Doe     | 25  | Male   |
+| Jane Smith   | 30  | Female |
+| Bob Johnson  | 45  | Male   |
+
+
+
 ### Demographic
 <center> 
 | Variable Name     | Data Type            | Collection Method |
