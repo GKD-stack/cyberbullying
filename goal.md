@@ -12,7 +12,7 @@ Cyberbullying is prevalent among U.S. teens. The Pew Research Center reported th
 
 76% of teens believe that social media companies looking for and deleting posts they think are bullying or harassing would help reduce harassment on social media platforms (Pew Research Center). Given only 2 options, 74% of teens say social media sites are doing only a fair/poor job addressing online harassment compared to the 25% that say the sites are doing an excellent/good job (Pew Research Center). 
 
-Given these statistics, it is paramount that social media sites take action. Therefore, this data science effort will be created with the assumption that it will be carried out internally by a social media site. 
+Given these statistics, it is paramount that social media sites take action. Therefore, this data science effort will be created with the assumption that it will be carried out internally by Instagram. 
 
 ## What Exactly Does Cyberbullying Look Like? 
 The most common type of cyberbullying are comments, rumors, and sexual remarks. 22.5% of students reported being the victims of mean comments online, 20.1% were the victims of false rumors, and 12.1% were the victims of sexual remarks (Cyberbullying Research Center). 
