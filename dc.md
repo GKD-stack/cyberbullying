@@ -91,11 +91,15 @@ The model can take a variety of forms including logistic regression, decision tr
 
 The result of the model will be a score from a scale of 1 to 100, where a higher score indicates one is more likely to be a victim. 
 
-graph TD;
-  A[Demographic<br> Cyberbullying<br> History<br> Network Relations] --> B[Network Analysis<br> Degree centrality<br> Eigenvector centrality<br> Community membership]
-  A[Demographic<br> Cyberbullying<br> History<br> Network Relations] --> C[NLP on Direct<br> Message and<br> Comments Relations<br> Hostile Comments<br> Frequency]
-  B --> D[Predictive Model<br> (Logistic Regression,<br> Decision Trees,<br> Random Forests,<br> Support Vector Machines,<br> Neural Networks)]
-  C --> D
+graph LR
+A[Demographic<br>Cyberbullying history<br>Network relations] --> B(Network Analysis)
+B --> C(Degree centrality<br>Eigenvector centrality<br>Community membership)
+A --> D(Direct message and comments relations)
+D --> E(NLP techniques to predict cyberbullying)
+E --> F(Frequency of hostile messages and comments)
+C --> G(Predictive model)
+F --> G
+
 
 
 There will be 2 thresholds used to classify each score. The thresholds will be determined based off of the training data and the outcomes of cyberbullying incidents examined manually by the Instagram team. 
