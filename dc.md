@@ -12,23 +12,6 @@ Note: It is possible to derive certain predictors such as age from already exist
 
 The following relations will be constructed. 
 
-
-# Tables
-
-Tables are responsive by default, allowing wide tables to have a horizontal scroll to access columns outside of the normal viewport.
-
-<div class="code-example" markdown="1">
-
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
-</div>
-
-
 ### Demographic
 <div class="code-example" markdown="1">
 
@@ -71,6 +54,7 @@ Tables are responsive by default, allowing wide tables to have a horizontal scro
 </div>
 
 ### Direct Messages
+The primary key for this table will be the other party and the data/time the message was sent. This will also include swipe ups from stories. 
 <div class="code-example" markdown="1">
 | Variable Name   | Data Type  | Collection Method |
 |:----------------|:-----------|:------------------|
@@ -96,43 +80,6 @@ Tables are responsive by default, allowing wide tables to have a horizontal scro
 | Original Post Caption | Categorical| Instagram         |
 </div>
 
-
-
-### Demographic 
-- Age - Integer (v)
-- Race - Categorical (v)
-- Sexuality - Categorical (v)
-- Household Income - Continuous Numeric (v)
-- Gender - Categorical (v) 
-- User ID - Categorical (p) 
-- Name - Categorical (p) 
-- Physical Address - Categorical (v)
-
-### Cyberbullying History
-- Any past incidents - Boolean (v) 
-- Any reported past incidents - Boolean (p)
-- Number of Cyberbullying Experiences in Past Year (v)
-
-### Network
-- Followers - Integer (p)
-- Following  - Integer (p)
-- Frequency of Posting - Integer (p)
-- Frequency of Highlights and Stories - Integer (p)
-- Frequency of Comments - Integer (p)
-- Frequency of Direct Messages Sent  - Integer (p)
-- Frequency of Direct Messages Recieved - Integer (p)
-- Cyberbullying in Online Circle - Boolean (v) 
-
-### Direct Messages (The primary key for this table will be the other party and the data/time the message was sent). This will also include swipe ups from stories. 
-- Other User Id(s) - account id (p)
-- Message (p)
-- Data/Time Sent (p)
-
-### Comments 
-- Others User Id - Categorical (p)
-- Comment - Categorical (p) 
-- Data/Time - Categorical (p)
-- Original Post Caption - Categorical (p) 
 
 ## Model 
 The predictors in demographic, cyberbullying history, and network will be used as inputs in the network analysis, and the results will be statistics such as degree centrality, eigenvector centrality, and community membership. Degree centrality essentially measures the number of followers, which is relevant since more popular accounts may be more prone to cyberbullying due ot more exposure. Eigenvector centrality measures a particular account’s influence in their network through measure such as time spent on viewing their posts or searching their account name. Community membership identifies particular groups who may belong to a marginalized group and be more likely to be targetted through cyberbullying. 
