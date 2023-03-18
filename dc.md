@@ -41,6 +41,7 @@ The following relations will be constructed.
 
 ### Network
 <div class="code-example" markdown="1">
+
 | Variable Name                          | Data Type | Collection Method |
 |:---------------------------------------|:----------|:------------------|
 | Followers                              | Integer   | Instagram         |
@@ -51,33 +52,31 @@ The following relations will be constructed.
 | Frequency of Direct Messages Sent      | Integer   | Instagram         |
 | Frequency of Direct Messages Received  | Integer   | Instagram         |
 | Cyberbullying in Online Circle         | Boolean   | Voluntary         |
+
 </div>
 
 ### Direct Messages
 The primary key for this table will be the other party and the data/time the message was sent. This will also include swipe ups from stories. 
 <div class="code-example" markdown="1">
+
 | Variable Name   | Data Type  | Collection Method |
 |:----------------|:-----------|:------------------|
 | Other User Id(s)| Categorical| Instagram         |
 | Message         | Categorical| Instagram         |
 | Date/Time Sent  | DateTime   | Instagram         |
+
 </div>
 
 ### Comments 
-| Variable Name          | Data Type   | Collection Method |
-|:----------------------:|:-----------|:------------------|
-| Others User Id         | Categorical | Instagram         |
-| Comment                | Categorical | Instagram         |
-| Date/Time              | DateTime    | Instagram         |
-| Original Post Caption  | Categorical | Instagram         |
-
 <div class="code-example" markdown="1">
+
 | Variable Name         | Data Type  | Collection Method |
 |:----------------------|:-----------|:------------------|
 | Others User Id        | Categorical| Instagram         |
 | Comment               | Categorical| Instagram         |
 | Date/Time             | DateTime   | Instagram         |
 | Original Post Caption | Categorical| Instagram         |
+
 </div>
 
 
