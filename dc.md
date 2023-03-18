@@ -46,42 +46,38 @@ Tables are responsive by default, allowing wide tables to have a horizontal scro
 </div>
 
 ### Cyberbullying History
-| Variable Name                                     | Data Type          | Collection Method |
-|:-------------------------------------------------:|:-------------------|:------------------|
-| Any past incidents                                | Boolean            | Voluntary         |
-| Any reported past incidents                       | Boolean            | Instagram         |
-| Number of Cyberbullying Experiences in Past Year  | Continuous Numeric | Voluntary         |
+<div class="code-example" markdown="1">
+| Variable Name                                    | Data Type          | Collection Method |
+|:-------------------------------------------------|:-------------------|:------------------|
+| Any past incidents                               | Boolean            | Voluntary         |
+| Any reported past incidents                      | Boolean            | Instagram         |
+| Number of Cyberbullying Experiences in Past Year | Continuous Numeric | Voluntary         |
 
-<center> 
+</div>
 
-</center>
 
 ### Network
-| Variable Name                           | Data Type  | Collection Method |
-|:---------------------------------------:|:----------|:------------------|
-| Followers                               | Integer   | Instagram         |
-| Following                               | Integer   | Instagram         |
-| Frequency of Posting                    | Integer   | Instagram         |
+<div class="code-example" markdown="1">
+| Variable Name                          | Data Type | Collection Method |
+|:---------------------------------------|:----------|:------------------|
+| Followers                              | Integer   | Instagram         |
+| Following                              | Integer   | Instagram         |
+| Frequency of Posting                   | Integer   | Instagram         |
 | Frequency of Highlights and Stories    | Integer   | Instagram         |
 | Frequency of Comments                  | Integer   | Instagram         |
 | Frequency of Direct Messages Sent      | Integer   | Instagram         |
 | Frequency of Direct Messages Received  | Integer   | Instagram         |
 | Cyberbullying in Online Circle         | Boolean   | Voluntary         |
-
-<center> 
-
-</center>
+</div>
 
 ### Direct Messages
-| Variable Name    | Data Type   | Collection Method |
-|:----------------:|:-----------|:------------------|
-| Other User Id(s) | account id | Instagram         |
-| Message          | Categorical | Instagram         |
-| Date/Time Sent   | DateTime    | Instagram         |
-
-<center> 
-
-</center>
+<div class="code-example" markdown="1">
+| Variable Name   | Data Type  | Collection Method |
+|:----------------|:-----------|:------------------|
+| Other User Id(s)| Categorical| Instagram         |
+| Message         | Categorical| Instagram         |
+| Date/Time Sent  | DateTime   | Instagram         |
+</div>
 
 ### Comments 
 | Variable Name          | Data Type   | Collection Method |
@@ -91,9 +87,14 @@ Tables are responsive by default, allowing wide tables to have a horizontal scro
 | Date/Time              | DateTime    | Instagram         |
 | Original Post Caption  | Categorical | Instagram         |
 
-<center> 
-
-</center>
+<div class="code-example" markdown="1">
+| Variable Name         | Data Type  | Collection Method |
+|:----------------------|:-----------|:------------------|
+| Others User Id        | Categorical| Instagram         |
+| Comment               | Categorical| Instagram         |
+| Date/Time             | DateTime   | Instagram         |
+| Original Post Caption | Categorical| Instagram         |
+</div>
 
 
 
