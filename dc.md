@@ -16,7 +16,7 @@ The following relations will be constructed.
 ### Demographic
 <center> 
 | Variable Name     | Data Type            | Collection Method |
-|:-----------------:|:--------------------|:------------------|
+|:-----------------:|:--------------------:|:------------------|
 | Age               | Integer              | Voluntary         |
 | Race              | Categorical          | Voluntary         |
 | Sexuality         | Categorical          | Voluntary         |
@@ -29,10 +29,49 @@ The following relations will be constructed.
 
 ### Cyberbullying History
 | Variable Name                                     | Data Type          | Collection Method |
-|:-------------------------------------------------:|:------------------|:------------------|
+|:-------------------------------------------------:|:-------------------|:------------------|
 | Any past incidents                                | Boolean            | Voluntary         |
-| Any reported past incidents                      | Boolean            | Instagram         |
+| Any reported past incidents                       | Boolean            | Instagram         |
 | Number of Cyberbullying Experiences in Past Year  | Continuous Numeric | Voluntary         |
+
+<center> 
+
+</center>
+
+### Network
+| Variable Name                           | Data Type  | Collection Method |
+|:---------------------------------------:|:----------|:------------------|
+| Followers                               | Integer   | Instagram         |
+| Following                               | Integer   | Instagram         |
+| Frequency of Posting                    | Integer   | Instagram         |
+| Frequency of Highlights and Stories    | Integer   | Instagram         |
+| Frequency of Comments                  | Integer   | Instagram         |
+| Frequency of Direct Messages Sent      | Integer   | Instagram         |
+| Frequency of Direct Messages Received  | Integer   | Instagram         |
+| Cyberbullying in Online Circle         | Boolean   | Voluntary         |
+
+<center> 
+
+</center>
+
+### Direct Messages
+| Variable Name    | Data Type   | Collection Method |
+|:----------------:|:-----------|:------------------|
+| Other User Id(s) | account id | Instagram         |
+| Message          | Categorical | Instagram         |
+| Date/Time Sent   | DateTime    | Instagram         |
+
+<center> 
+
+</center>
+
+### Comments 
+| Variable Name          | Data Type   | Collection Method |
+|:----------------------:|:-----------|:------------------|
+| Others User Id         | Categorical | Instagram         |
+| Comment                | Categorical | Instagram         |
+| Date/Time              | DateTime    | Instagram         |
+| Original Post Caption  | Categorical | Instagram         |
 
 <center> 
 
@@ -71,9 +110,9 @@ The following relations will be constructed.
 - Data/Time Sent (p)
 
 ### Comments 
-- Others User - user id (p)
+- Others User Id - Categorical (p)
 - Comment - Categorical (p) 
-- Data/Time - Date (p)
+- Data/Time - Categorical (p)
 - Original Post Caption - Categorical (p) 
 
 ## Model 
