@@ -6,9 +6,14 @@ nav_order: 7
 
 # Interpretations
 
-The potential victim’s interpretation will also vary by the threshold the model’s risk score output surpasses. 
+As a recap, the result of the model will be a score from a scale of 1 to 100, where a higher score indicates one is more likely to be a victim.
 
-As a recap, there will be two thresholds used to classify the score the model outputs. 
+There will be 2 thresholds used to classify each score. The thresholds will be determined based off of the training data and the outcomes of cyberbullying incidents examined manually by the Instagram team. A score of 0 should correspond to no evidence of cyberbullying. A score of 100 will encapsulate all behaviors that have previously lead to the highest form of complaint at Instagram. 
+
+
+The potential victim’s interpretation will also vary by the thresholds the model’s risk score output surpasses. 
+
+There will be two thresholds used to classify the score the model outputs. 
 
 If a score surpasses the first threshold, the victim (and other account holders) will be warned they are a potential victim of cyberbullying, provided educational resources about cyberbullying, and reminded of the actions they can take to mitigate it, including blocking and flagging accounts. It will also be clarified that this warning is a probability based on recent activity, not a certainty with human judgment involved.  The user will have the opportunity to either confirm whether this warning is accurate or not, which will help eventually improve the accuracy of the model. Essentially, this warning will be portrayed as a preventative measure based on probability. Therefore, it should not lead to any rash actions or interventions by the user where they block others or a guardian who starts an intervention. 
 
