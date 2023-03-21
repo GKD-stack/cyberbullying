@@ -6,7 +6,7 @@ nav_order: 3
 
 # Proposed Data Collection 
 
-User-level data will be collected via Instagram for all factors. All users will have the option to voluntarily provide more detailed information about factors such as their demographics, past cyberbullying history, and current concerns. IThe primary limitation on data collection will be age.
+User-level data will be collected via Instagram for all factors. All users will have the option to voluntarily provide more detailed information about factors such as their demographics, past cyberbullying history, and current concerns. The primary limitation on data collection will be age.
 
 Note: It is possible to derive certain predictors such as age from already existing data. Nevertheless, users will also be asked for these predictors and voluntary responses will be prioritized over inferred ones. 
 
@@ -85,7 +85,7 @@ The predictors in demographic, cyberbullying history, and network relations will
 
 We will also use natural language processing techniques on the predictors in the direct message and comments relations to predict whether a particular comment or message could be indicative of cyberbullying. The results of this subprocess can be statistics that reveal how many and the frequency of hostile comments, messages that a victim recieves and from who. 
 
-Finally, we will use the results from the subprocesses (i.g., degree centrality, frequency of hostile comments) the alongside the predictors in the demographic and cyberbullying history table as inputs for our predictive model. 
+Finally, we will use the results from the subprocesses (i.g., degree centrality, frequency of hostile comments) the alongside the predictors in the demographic and cyberbullying history tables as inputs for our predictive model. 
 
 The model can take a variety of forms including logistic regression, decision trees, random forests, support vector machines, and neural networks. Since there are not strong existing biases within this data, we will prioritize performance above transparency and choose a neural network model to optimize performance. 
 
@@ -95,7 +95,7 @@ There will be 2 thresholds used to classify each score. The thresholds will be d
 
 If a score surpasses the first threshold, then the victim is warned and provided with educational resources and reminded of actions they can take including blocking and flagging accounts. If there are other account holders or if the account has parental controls, then the parents will be notified. 
 
-If a score surpasses the second threshold, then actions that were recommended to the victim are automatically done, a real person is notified to look more into the case, and the victim will be notified. For example, an account that consistently sends inappropriate messages will be blocked unless the user unblocks them manually. If there are inconsistencies with this process, the original user can also submit feedback anytime as a false flag. 
+If a score surpasses the second threshold, then actions that were recommended to the victim are automatically done, a real person from the Instagram team is notified to look more into the case, and the victim will be notified. For example, an account that consistently sends inappropriate messages will be blocked unless the user unblocks them manually. If there are inconsistencies with this process, the original user can also submit feedback anytime as a false flag. 
 
 ![Flowchart](/cyberbullying/assets/flow.png)
 
